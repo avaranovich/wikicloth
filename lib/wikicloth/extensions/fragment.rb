@@ -22,7 +22,7 @@ module WikiCloth
       end
 
       # another case, when url already has title and namespace
-      if url.start_with?("/contributions") || url.start_with?("/concepts")
+      if url.start_with?("/contributions") || url.start_with?("/concepts") || url.start_with?("/languages")
         # remove slash
         url[0] = ''
         return resource_prefix + url
